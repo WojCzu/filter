@@ -1,8 +1,8 @@
 import React from 'react';
+import { Wrapper } from './App.styles';
 
 const App = () => {
-  const x = 'hello';
-  return <div>{console.log(x)}</div>;
+  return <Wrapper></Wrapper>;
 };
 
 export default App;
