@@ -1,10 +1,13 @@
+import { DataProvider } from 'hooks/useData';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from 'views/Root';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Root />
+    <DataProvider>
+      <Root />
+    </DataProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

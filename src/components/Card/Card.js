@@ -3,7 +3,7 @@ import { Wrapper, ImageContainer } from './Card.styles';
 
 const Card = ({ href, image, text }) => {
   return (
-    <Wrapper href={href}>
+    <Wrapper href={href} rel="noopener noreferrer" target="_blank">
       <ImageContainer>
         <img src={image} />
       </ImageContainer>

@@ -1,12 +1,14 @@
 import Card from 'components/Card/Card';
+import { useData } from 'hooks/useData';
 import React from 'react';
 import { Wrapper } from './Results.styles';
 
-const Results = ({ data }) => {
+const Results = () => {
+  const { data } = useData();
   return (
     <Wrapper>
-      {data?.map(({ href, image, name }) => (
-        <Card key={name} href={href} image={image} text={name} />
+      {data?.map(({ href, imageURL, name }) => (
+        <Card key={name} href={href} image={imageURL} text={name} />
       ))}
     </Wrapper>
   );

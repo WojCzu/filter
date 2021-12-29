@@ -22,6 +22,9 @@ export const Wrapper = styled.a`
     p {
       color: ${({ theme }) => theme.color.darkGreen};
     }
+    img {
+      transform: scale(115%);
+    }
   }
 `;
 
@@ -31,5 +34,7 @@ export const ImageContainer = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: bottom;
+    transition: transform ease-in-out 0.2s;
   }
 `;
