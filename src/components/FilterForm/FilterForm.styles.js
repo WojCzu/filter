@@ -5,6 +5,11 @@ export const Wrapper = styled.form`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: center;
   align-items: stretch;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+  }
 `;

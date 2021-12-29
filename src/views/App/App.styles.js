@@ -8,4 +8,8 @@ export const Wrapper = styled.div`
   grid-template-columns: 360px 1fr;
 
   background-color: ${({ theme }) => theme.color.darkWhite};
+
+  & > * {
+    overflow: auto;
+  }
 `;
